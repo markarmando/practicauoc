@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Register</title>
+	<meta charset="utf-8">
+	<meta name="Dashboard Analytics" content="Meta description de la página">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet"></head>
+<body>
+
+	<header>
+		<!-- Header content -->
+		<div class="header_content">
+			<!-- Link to main content -->
+			<a href="#main-content">Skip to Main Content</a>
+			<!-- Logo container -->
+			<div class="logo_header">
+				<a href="index.html"><img src="images/logo-header.svg" alt="logo_header"></a>
+			</div>
+			<!-- Navigation -->
+			<ul class="navigation">
+				<li><a href="index.html">Main Features</a></li>
+				<li><a href="pricing.html">Pricing & Opinions</a></li>
+				<li><a href="faqs.html">FAQs</a></li>
+			</ul>
+			<!-- Resgister/login links -->
+			<ul class="register_login_links">
+				<li><a href="">Sign In</a></li>
+				<li><a href="register.html">Sign Up</a></li>
+			</ul>
+		</div>
+
+	</header>
+
+	<main id="main-content" role="main" tabindex="-1">
+		<section class="seccion_formulario">
+			<!-- Form begining -->
+			<form>
+				<h1>Personal Information</h1>
+				<ul>
+					<!-- Name -->
+					<li>
+						<label for="Name">Name<abbr title="Obligatory field" aria-label="required">*</abbr></label>
+						<input type="text" name="Name" required>
+					</li>
+					<!-- Lastanme -->
+					<li>
+						<label for="Lastname">Lastname<abbr title="Obligatory field" aria-label="required">*</abbr></label>
+						<input type="text" name="Lastname" required>
+					</li>
+					<!-- Country -->
+					<li>
+						<label for="Country">Country<abbr title="Obligatory field" aria-label="required">*</abbr></label>
+						<input type="text" name="Country" required>
+					</li>
+				</ul>
+
+				<h1>Contact Information</h1>
+				<ul>
+					<!-- Mail -->
+					<li>
+						<label for="E-mail">E-mail<abbr title="Obligatory field" aria-label="required">*</abbr></label>
+						<input type="text" name="E-mail" required>
+					</li>
+					<!-- TLF -->
+					<li>
+						<label for="Telephone">Telephone<abbr title="Obligatory field" aria-label="required">*</abbr></label>
+						<input type="text" name="Telephone" required>
+					</li>
+				</ul>
+
+				<h1>About your company</h1>
+				<ul>
+					<!-- Company name -->
+					<li>
+						<label for="company_Name">Company Name<abbr title="Obligatory field" aria-label="required">*</abbr></label>
+						<input type="text" name="company_Name" required>
+					</li>
+					<!-- VAT Number -->
+					<li>
+						<label for="VAT_Number">VAT Number<abbr title="Obligatory field" aria-label="required">*</abbr></label>
+						<input type="text" name="VAT_Number" required>
+					</li>
+				</ul>
+
+				<!-- Recuadro para marcar el consentimiento -->
+				<ul class="consentimiento">
+					<li>
+						<input type="checkbox" name="Consent" required>
+					</li>
+					<li>
+						<p>
+							I consent on receiving news, events and special offers by Dashboard Analytics. <br>
+							On clicking on "Create an account", I accept the Terms of Service and the Privacy Policy of Dashboard Analytics
+						</p>
+					</li>
+				</ul>
+
+				<!-- Sign up button -->
+				<button type="button" name="button">Sign Up</button>
+
+				<!-- Link to login if already registered -->
+				<ul class="already_account">
+					<li><p>Already have an account?</p></li>
+					<li><a href="#">Sign in</a></li>
+				</ul>
+
+			</form>
+		</section>
+	</main>
+
+	<footer>
+		<!-- Container with footer conent -->
+		<div class="footer_content">
+			<!-- Logo, menu, social container -->
+			<div class="content1">
+				<!-- logo -->
+				<div class="logo_footer_container">
+					<img src="images/logo-footer.svg" alt="logo">
+				</div>
+				<!-- Navigation -->
+				<ul class="navigation_footer">
+					<li><a href="index.html">Main Features</a></li>
+					<li><a href="pricing.html">Pricing Plans</a></li>
+					<li><a href="faqs.html">FAQ</a></li>
+				</ul>
+				<!-- Social buttons -->
+				<ul class="social_links">
+					<li><a class="facebook" href="https://www.facebook.com "></a></li>
+					<li><a class="twitter" href="https://www.twitter.com "></a></li>
+					<li><a class="instagram" href="https://www.instagram.com "></a></li>
+					<li><a class="tlf" href="#"></a></li>
+					<li><a class="email" href="#"></a></li>
+				</ul>
+			</div>
+			<!-- Copyright text -->
+			<div class="copyright_text">
+				<p>
+					This design is made with <a href="https://www.figma.com/">Figma</a>
+					and based on a template designed by <a href="https://www.figma.com/@zanimanski">Valery Zanimanski </a>
+					, and licensed under <a href="https://creativecommons.org/licenses/by/4.0/ ">CC BY 4.0 </a>
+					. Some modifications were made to the original design.
+				</p>
+			</div>
+
+
+		</div>
+
+
+	</footer>
+</body>
+</html>

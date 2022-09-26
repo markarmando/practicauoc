@@ -1,0 +1,886 @@
+@font-face {
+  font-family: 'segicons';
+  src: url('../fonts/segicons.eot?65778044');
+  src: url('../fonts/segicons.eot?65778044#iefix') format('embedded-opentype'),
+       url('../fonts/segicons.woff?65778044') format('woff'),
+       url('../fonts/segicons.ttf?65778044') format('truetype'),
+       url('../fonts/segicons.svg?65778044#segicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* colores
+Gris de fondo: #EAEDF4
+•	•	Azul oscuro (cabecera, pie, textos): #172755
+•	•	Magenta de los botones y enlaces: #D11067
+•	•	Lila FAQs: #7357FF
+•	•	Texto opiniones: #666666 */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --------------------------HEADER--------------------- */
+
+/* Link to the main content */
+header a[href="#main-content"] {
+  background-color: #1727557;
+  border: 3px solid #D11067;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  left: 100px;;
+  padding: 20px;
+  position: absolute;
+  top: -80px;
+  transition: top 0.3s;
+  z-index: 100
+}
+
+/* When focused it shows from top: -80px to top:100px */
+header a[href="#main-content"]:focus {
+  top: 100px;
+}
+
+/* Header style */
+header {
+  background-color: #172755;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Header links style */
+header a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+.navigation a:hover, .navigation a:focus{
+  border-bottom: 6px solid white;
+}
+
+.navigation a:active {
+  border-bottom: 6px solid #D11067;
+}
+
+
+/* Postion for the header content */
+.header_content {
+  width: 1180px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* Logo settings */
+.logo_header {
+  flex: 1/2;
+  text-align: left;
+}
+
+.logo_header img{
+  width: 200px;
+  max-width: 100%;
+}
+
+/* Navigation Menu (alineated next to logo container) */
+.navigation li{
+  margin: 10px;
+  padding: 2px;
+  list-style-type: none;
+}
+
+.navigation{
+  margin-left: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Register/Login links (right alineated) */
+.register_login_links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.register_login_links li {
+  margin: 10px;
+}
+
+/* Signup link style */
+header a[href="register.html"] {
+  padding: 5px 45px;
+  background: #D11067;
+  border-radius: 20px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.section1 a[href="register.html"]:hover {
+  background: white;
+  color: #D11067;
+}
+
+/* ---------------BODY------------ */
+/* Some general style for titles and paragraphs */
+body {
+  background-color: #EAEDF4;
+}
+
+h1{
+  font-family: 'Nunito', sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+}
+
+/* ---------------------FIRST SECTION - MAIN FEATURES--------- */
+
+/* In this first section everything its alineated to the flex-end */
+/* There is a div for the images and another one for all the text */
+.section1 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #172755;
+  color: white;
+  border-bottom: 15px solid #D11067;
+}
+
+/* Text settings */
+
+.section1_text {
+  width: 550px;
+  position: relative;
+  left: -140px;   /*Some negative margin so it is more separted from the images */
+}
+
+/* Paragraph margin */
+.section1_text p {
+  margin: 20px 0px 60px 0;
+}
+
+/* Try for free link style */
+.section1_text .button {
+  padding: 15px 70px;
+  background: #D11067;
+  color: white;
+  border-radius: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+/* Images settings */
+.section1_images {
+  position: relative;
+}
+
+/* The two images have max-width and height:auto to be responsive */
+/* Style for the small image, it has some negative margin so
+it looks moved to the left */
+#img_chart_concentric {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  width: 50%;
+  top: 120px;
+  left: -70px;
+  background: white;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 26px 28px 31px -13px rgba(0,0,0,0.42)
+}
+
+/* Style for the big image */
+#img_all_widgets {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+  padding: 20px 0 20px 20px;
+  background: white;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  box-shadow: 26px 28px 31px -13px rgba(0,0,0,0.42)
+
+}
+
+/* SECOND SECTION - MAIN FEATURES */
+/* This section is divided into 2 divs. One div for the title and intro
+and another one for the 3 features. They are organized in a block style
+because of flex-direction: column; */
+
+/* Setting for this section (alignment, display, etc) */
+.section2 {
+  color: #172755;
+  margin: 50px 0 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Feature title style */
+.section2 h4{
+  font-family: 'Nunito', sans-serif;
+  font-weight: bolder;
+}
+
+/* This is the container with the 2 divs */
+.main_features {
+  display: flex;
+  flex-direction: column;
+  width: 1180px;
+}
+
+/* Margin for the introduction */
+.intro > * {
+  margin-bottom: 30px;
+}
+
+.intro {
+  flex: 1;
+}
+
+/* Features settings */
+.features{
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex: 1;
+  text-align: center;
+}
+
+/* Margin for everything inside the divs feature */
+.features div > * {
+  margin-bottom: 30px;
+}
+
+/* Image cropping  */
+img[alt="clock"] {
+  position: relative;
+  left: 65px;
+  clip-path: inset(0 140px 0 0)
+}
+img[alt="screen"] {
+  clip-path: inset(0 60px 0 60px)
+}
+img[alt="rocket"] {
+  position: relative;
+  right: 65px;
+  clip-path: inset(0 0 0 140px)
+}
+
+
+/* THIRD SECTION - MAIN FEATURES  */
+.section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 150px 0;
+}
+
+/* In this section everything is inside a 2columns/3row grid */
+/* Every div contains an image or text */
+/* It is ordered by the html order */
+
+.wrapper {
+  text-align: left;
+  align-items: center;
+  width: 1180px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 100px;
+}
+
+/* Images style */
+.wrapper img {
+  padding: 40px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+/* Title and paragrapg style */
+.wrapper h1, .wrapper p {
+  color: #172755;
+  margin-bottom: 30px;
+  padding-right: 90px;
+}
+
+/* Links tyle */
+.wrapper a{
+  color: #D11067;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+
+}
+
+
+/* -----------------FIRST SECTION - PRICING & OPINIONS------------------ */
+#pricing_title {
+  text-align: center;
+  color: #172755;
+  margin: 50px 0 50px 0;
+}
+
+/* Pricing PLans title style */
+h2 {
+  color: #D11067;
+  font-family: 'Nunito', sans-serif;
+  font-size: 45px;
+  text-align: center;
+}
+
+/* Section settings to center the content*/
+.section1_pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Margin bottom */
+.section1_pricing_text > * {
+  margin-bottom: 40px;
+}
+
+/* The two divs inside this section are setted to show as
+flex-direction column so the sqaure plans are under the title/text */
+.pricing_plans {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 1180px;
+}
+
+/* Text color */
+.section1_pricing_text {
+  color: #172755;
+}
+
+/* Settings for the pricing options to be separted */
+.pricing_plans_squares {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Square style */
+.pricing_plans_squares > div {
+  width: 300px;
+  height: 350px;
+  background: #172755;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Margins for the objects inside the sqaures */
+.pricing_plans_squares > div > * {
+  margin: 10px 0 10px 0;
+}
+
+/* Title style */
+.pricing_plans_squares > div > h3 {
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: -10px;
+}
+
+/* Price style */
+.price {
+  font-size: 50px;;
+  font-weight: bold;
+  margin-bottom: -17px;
+}
+.price::first-letter {
+  font-size: 25px;
+}
+
+/* White Line style */
+.line {
+  border: 1px solid white;
+  width: 200px;
+}
+
+/* Order link style */
+.pricing_plans_squares > div > a {
+  padding: 10px 70px 10px 70px;
+  border: 1px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  color:white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  transition: 0.5s;
+}
+
+/* Hover effects */
+.pricing_plans_squares > div:hover {
+  background: white;
+  color: #172755;
+  box-shadow: 1px 6px 16px 5px rgba(0,0,0,0.5)
+}
+
+.pricing_plans_squares > div:hover > a {
+  border-color: #D11067;
+  background: #D11067;
+  color: white;
+}
+
+.pricing_plans_squares > div > a:hover {
+  border-color: #D11067;
+  background-color: white;
+  color: #D11067
+}
+
+/* SECOND SECTION - PRICING & OPINIONS */
+/* Alignment settings for the table to be centered */
+.section2_pricing {
+  margin: 100px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Table style */
+table {
+  width: 1180px;
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  color: #172755;
+  background-color: white;
+  border-collapse: collapse;
+  margin: 50px 0;
+}
+
+/* Table rows height */
+table tr{
+  height: 70px;
+}
+
+/* Bottoms borders style */
+table tr th {
+  border-bottom: 1px solid grey;
+}
+
+/* Table header style */
+table thead {
+  background-color: #172755;
+  color: white;
+}
+
+/* Padding for the objects inside the table */
+th {
+  padding-left: 60px;
+}
+
+
+/* THIRD SECTION - PRICING & OPINIONS */
+
+/* Style of opinion baloons */
+/* Alignment for the objects inside this section */
+.section3_pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Div with the speech baloons */
+.review_baloons{
+  margin-top: 50px;
+  width: 1180px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Speech baloons style */
+.review_baloons > div {
+  width: 250px;
+  height: 330px;
+  padding: 20px;
+  background: white;
+  border-radius: 20px;
+  position: relative;
+}
+
+
+/* Triangular form under ballon */
+.review_baloons div::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width: 0;
+  height: 0;
+  border: 20px solid transparent;
+  border-top-color: white;
+  border-bottom: 0;
+  border-right: 0;
+  margin-bottom: -20px;
+}
+
+/* Settings for the corporate logos */
+.review_baloons > div img {
+  width: 80px;
+  margin-bottom: 40px;
+}
+
+/* Settings for the customer names */
+.review_baloons > div h4{
+  position: absolute;
+  top: 50px;
+  left: 120px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #172755
+}
+
+.review_baloons > div p {
+  color: #666666;
+}
+
+/* Style of opionon writers */
+.review_authors {
+  color: #172755;
+  width: 1180px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+/* Settings for the div containing rhe author names */
+.review_authors > div {
+  width: 250px;
+  color: #172755;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 20px;
+}
+
+
+.review_baloons > div p::before {
+  position: absolute;
+  top: 100px;
+  content: "\201C";
+  font-size: 70px;
+  color: grey;
+}
+
+
+/* ----------------------FAQs.html style---------------------------- */
+/* Title page style */
+#faqs_title {
+  color: #172755;
+  text-align: center;
+  margin: 100px 0 50px 0;
+}
+
+/* Settings to center the content */
+.faqs_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+/* Pink line under titles */
+.linia_rosa {
+  display: block;
+  border: 3px solid #D11067;
+  width: 90px;
+  border-radius: 2px;
+}
+
+/* FAQ container style */
+.faqs {
+  text-align: left;
+  width: 1180px;
+  margin: 10px 0 20px 0;
+}
+
+/* Faqs title alignment */
+.faqs h2 {
+  text-align: left;
+}
+
+/* Question bubble style */
+.faqs > div {
+  background: white;
+  padding: 30px;
+  margin: 20px 0 20px 0;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 20px;
+}
+
+/* Questions style */
+.faqs h4 {
+  color: #7357FF;
+  font-weight: bolder;
+}
+
+/* Paragraph margin (answers) */
+.faqs p {
+   margin: 15px 0 15px 0;
+ }
+
+/* list margin */
+.faqs ul {
+  margin-left: 50px;
+}
+
+/* style for pink underlined text */
+.underlined_pink {
+  text-decoration: underline;
+  color: #D11067;
+}
+
+
+/* ---------------------REGISTER HTML STYLE------------------ */
+.seccion_formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0 100px 0;
+}
+
+/* Form style  */
+.seccion_formulario form {
+  width: 580px;
+  border: 5px solid #172755;
+  padding: 20px;
+}
+
+/* List element settings */
+.seccion_formulario li {
+  list-style: none;
+  display: flex;
+  flex-direction: column; /* To be displyed in block */
+}
+/* margin for every section */
+.seccion_formulario ul {
+  margin-bottom: 30px;
+}
+
+/* Text style */
+.seccion_formulario label {
+  color: #D11067;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Input text style */
+.seccion_formulario input {
+  margin: 10px 0 10px 0;
+  height: 40px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Agreement settings */
+.consentimiento{
+  display: flex;
+}
+
+.consentimiento p {
+  font-size: 10px;
+  margin: 10px 0 0 20px;
+}
+
+.consentimiento input {
+  width: 20px;
+}
+
+/* Sign up button style */
+.seccion_formulario button {
+  padding: 10px 60px;
+  background-color: #D11067;
+  color: white;
+  border-color: #172755;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: -25px 0 15px 0;
+
+}
+
+.already_account {
+  display: flex;
+}
+
+.already_account a {
+  font-family: 'Roboto', sans-serif;
+  color: #D11067;
+  font-weight: bold;
+  margin: 2px 0 0 10px;
+
+}
+
+
+/* ---------------------Footer style--------------------- */
+footer {
+  background-color: #172755;
+  padding: 50px 0 20px 0;
+  border-top: 15px solid #D11067;
+  display: flex;
+  justify-content: center;
+
+}
+
+/* footer content container */
+.footer_content {
+  width: 1180px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* <!-- Logo, menu, social container --> */
+.content1 {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+/* copyright text container */
+.copyright_text {
+  margin-top: 40px;
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+/* underlined copyright links */
+.copyright_text p a{
+  text-decoration: underline;
+}
+
+/* Footer link style */
+.footer_content a{
+  color: white;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+}
+
+/* Logo footer container */
+.logo_footer_container {
+  flex: 1;
+  text-align: left;
+}
+
+/* Footer menu style */
+.navigation_footer {
+  list-style-type: none;
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+}
+
+/* Social links style */
+.social_links {
+  display: flex;
+  list-style-type: none;
+  flex: 1;
+  justify-content: flex-end;
+}
+
+/* margin social links */
+.social_links li {
+  margin:0 15px 0 15px;
+}
+
+/* Social icons */
+.social_links .facebook:before {
+  font-family: "Segicons";
+  content: "\F09a";
+}
+.social_links .twitter:before {
+  font-family: "Segicons";
+  content: "\F099";
+}
+.social_links .instagram:before {
+  font-family: "Segicons";
+  content: "\F16d";
+}
+.social_links .tlf:before {
+  font-family: "Segicons";
+  content: "\E801";
+}
+.social_links .email:before {
+  font-family: "Segicons";
+  content: "\F0e0";
+}
+
+.social_links a:hover {
+  color: #D11067
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.social-links a:before{
+	content:"";
+	font-family: "segicons";
+	font-size:24px;
+	position:absolute;
+	left:0;
+	top:0;
+	width:30px;
+	height:30px;
+	color:white;
+	text-indent:0;
+}
+.social-links a.facebook:before{
+	content:"\F09a";
+}*/
+
+/*
+@media only screen and (max-width:550px) {
+
+}
+*/
